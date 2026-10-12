@@ -1,0 +1,1 @@
+export default function Terms(){return <main className="page-shell"><p className="eyebrow">POLICY</p><h1 className="page-title">Terms.</h1><p className="page-intro" style={{fontSize:18}}>Demo terms: connect this route to reviewed terms of sale, delivery assumptions, returns, taxes, and governing-law requirements before launch.</p></main>}

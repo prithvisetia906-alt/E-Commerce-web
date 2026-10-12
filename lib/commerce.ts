@@ -1,0 +1,3 @@
+import crypto from "node:crypto";
+export function calculateTotal(items:{unitPrice:number;quantity:number}[],shipping=0,tax=0,discount=0){const subtotal=items.reduce((sum,item)=>sum+item.unitPrice*item.quantity,0); return {subtotal,shipping,tax,discount,total:Math.max(0,subtotal+shipping+tax-discount)};}
+export function verifyRazorpaySignature(orderId:string,paymentId:string,signature:string,secret:string){const expected=crypto.createHmac("sha256",secret).update(`${orderId}|${paymentId}`).digest("hex"); if(signature.length!==expected.length)return false; return crypto.timingSafeEqual(Buffer.from(expected),Buffer.from(signature));}

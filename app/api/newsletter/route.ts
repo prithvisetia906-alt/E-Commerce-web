@@ -1,0 +1,3 @@
+import { NextResponse } from "next/server"; import { z } from "zod"; import { prisma } from "@/lib/server";
+const schema=z.object({email:z.string().email().max(254).transform(v=>v.trim().toLowerCase())});
+export async function POST(request:Request){try{const body=schema.parse(await request.json()); await prisma.newsletterSubscriber.upsert({where:{email:body.email},update:{},create:{email:body.email}}); return NextResponse.json({ok:true});}catch(error){if(error instanceof z.ZodError)return NextResponse.json({ok:false,error:"Enter a valid email address."},{status:400}); return NextResponse.json({ok:false,error:"Unable to subscribe right now."},{status:500});}}

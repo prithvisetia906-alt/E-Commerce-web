@@ -1,0 +1,1 @@
+export default function Addresses(){return <main className="page-shell"><p className="eyebrow">ACCOUNT</p><h1 className="page-title">Addresses.</h1><p className="page-intro">Saved addresses are designed to be owned by the authenticated user and loaded from PostgreSQL.</p></main>}

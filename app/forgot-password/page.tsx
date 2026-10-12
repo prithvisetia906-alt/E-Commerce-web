@@ -1,0 +1,1 @@
+export default function Forgot(){return <main className="page-shell"><p className="eyebrow">ACCOUNT RECOVERY</p><h1 className="page-title">Forgot password.</h1><div className="category-card" style={{maxWidth:470,marginTop:30}}><p style={{color:"var(--muted)"}}>Password reset requires a configured email provider and expiring, single-use server tokens.</p></div></main>}

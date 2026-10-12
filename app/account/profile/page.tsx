@@ -1,0 +1,1 @@
+export default function Profile(){return <main className="page-shell"><p className="eyebrow">ACCOUNT</p><h1 className="page-title">Profile.</h1><p className="page-intro">Profile editing requires a configured authenticated session and server-side ownership check.</p></main>}

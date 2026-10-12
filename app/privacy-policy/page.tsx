@@ -1,0 +1,1 @@
+export default function Privacy(){return <main className="page-shell"><p className="eyebrow">POLICY</p><h1 className="page-title">Privacy.</h1><p className="page-intro" style={{fontSize:18}}>Demo privacy notice: a deployed NOVA store should document data collection, session cookies, payment-provider processing, retention, and contact rights before launch.</p></main>}

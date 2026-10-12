@@ -1,0 +1,1 @@
+export default function Orders(){return <main className="page-shell"><p className="eyebrow">ACCOUNT</p><h1 className="page-title">Your orders.</h1><p className="page-intro">Sign in with a configured Auth.js session to load customer-owned orders from PostgreSQL.</p></main>}
